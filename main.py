@@ -28,7 +28,7 @@ def langs(message):
     elif message.text == "⬅ Выбрать другой язык":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
         lang_en = types.KeyboardButton('EN 🇺🇸')
-        lang_ru = types.KeyboardButton('RU 🇷🇺')
+        lang_ru = types.KeyboardButton('ru')
         lang_ua = types.KeyboardButton('UA 🇺🇦')
         markup.add(lang_ua, lang_ru, lang_en)
         bot.send_message(message.chat.id, "Choose language", reply_markup=markup)
@@ -52,7 +52,7 @@ def langs(message):
     elif message.text == "⬅ Обрати іншу мову":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
         lang_en = types.KeyboardButton('EN 🇺🇸')
-        lang_ru = types.KeyboardButton('RU 🇷🇺')
+        lang_ru = types.KeyboardButton('ru')
         lang_ua = types.KeyboardButton('UA 🇺🇦')
         markup.add(lang_ua, lang_ru, lang_en)
         bot.send_message(message.chat.id, "Choose language", reply_markup=markup)
@@ -76,7 +76,7 @@ def langs(message):
     elif message.text == "⬅ Choose another language":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
         lang_en = types.KeyboardButton('EN 🇺🇸')
-        lang_ru = types.KeyboardButton('RU 🇷🇺')
+        lang_ru = types.KeyboardButton('ru')
         lang_ua = types.KeyboardButton('UA 🇺🇦')
         markup.add(lang_ua, lang_ru, lang_en)
         bot.send_message(message.chat.id, "Choose language", reply_markup=markup)
