@@ -33,7 +33,7 @@ def langs(message):
         markup.add(lang_ua, lang_ru, lang_en)
         bot.send_message(message.chat.id, "Choose language", reply_markup=markup)
     elif message.text == "💰Получить инвайт-ссылку":
-        bot.send_message(message.chat.id, "Мы пришлем инвай-ссылку в личные сообщения в течении 10 минут!")
+        bot.send_message(message.chat.id, "Мы пришлем инвайт-ссылку в личные сообщения в течении 10 минут!")
         bot.send_message(156664092, f'Пользователь с ником {message.from_user.username}, именем {message.from_user.first_name} {message.from_user.last_name} запросил инвайт ссылку.')
     elif message.text == "❓Почитать правила конкурса":
         markup = types.InlineKeyboardMarkup()
