@@ -8,14 +8,14 @@ bot = telebot.TeleBot('5714399659:AAEiZe48gJOunQqVGI2VSfFovSm2m-B68eQ')
 def start(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
     lang_en = types.KeyboardButton('EN 🇺🇸')
-    lang_ru = types.KeyboardButton('RU')
+    lang_ru = types.KeyboardButton('ru')
     lang_ua = types.KeyboardButton('UA 🇺🇦')
     markup.add(lang_ua, lang_en, lang_ru)
     bot.send_message(message.chat.id, "Choose language", reply_markup=markup)
 
 @bot.message_handler()
 def langs(message):
-    if message.text == "RU":
+    if message.text == "ru":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         rules1 = types.KeyboardButton('❓Почитать правила конкурса')
         rules2 = types.KeyboardButton('❗Как стать партнером')
