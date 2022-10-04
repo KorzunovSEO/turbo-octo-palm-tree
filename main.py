@@ -48,7 +48,7 @@ def langs(message):
         markup.add(rules1, rules2, rules3, backbutton)
         bot.send_message(message.chat.id, "Вітаємо Вас у нашому Telegram боті! Тут ми зібрали інформацію про правила нашого конкурсу та партнерської програми. Читай та заробляй!", reply_markup=markup)
     elif message.text == "❗Як стати партнером":
-        bot.send_message(message.chat.id, 'Ми підготували інструкцію для тебе! <a href="https://telegra.ph/Kak-zarabatyvat-vmeste-s-Crypocto-09-28">Почати заробляти!</a>', parse_mode='html')
+        bot.send_message(message.chat.id, 'Ми підготували інструкцію для тебе! <a href="https://telegra.ph/YAk-zaroblyati-razom-%D1%96z-Crypocto-10-04">Почати заробляти!</a>', parse_mode='html')
     elif message.text == "⬅ Обрати іншу мову":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
         lang_en = types.KeyboardButton('EN 🇺🇸')
@@ -72,7 +72,7 @@ def langs(message):
         markup.add(rules1, rules2, rules3, backbutton)
         bot.send_message(message.chat.id, "Welcome to our Telegram bot! Here we have collected information about the rules of our contest and affiliate program. Read and earn!", reply_markup=markup)
     elif message.text == "❗How to become a partner":
-        bot.send_message(message.chat.id, 'We have prepared a guide for you! <a href="https://telegra.ph/Kak-zarabatyvat-vmeste-s-Crypocto-09-28">Start earning!</a>', parse_mode='html')
+        bot.send_message(message.chat.id, 'We have prepared a guide for you! <a href="https://telegra.ph/How-to-Earn-Together-with-Crypocto-10-04">Start earning!</a>', parse_mode='html')
     elif message.text == "⬅ Choose another language":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
         lang_en = types.KeyboardButton('EN 🇺🇸')
