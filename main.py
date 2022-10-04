@@ -81,7 +81,7 @@ def langs(message):
         markup.add(lang_ua, lang_ru, lang_en)
         bot.send_message(message.chat.id, "Choose language", reply_markup=markup)
     elif message.text == "💰Get an invite link":
-        bot.send_message(message.chat.id, "We will send an invite-link to your personal messages within 10 minutes!")
+        bot.send_message(message.chat.id, "We will send an invite link in a private message within 10 minutes")
         bot.send_message(156664092, f'User with nickname {message.from_user.username}, name {message.from_user.first_name} {message.from_user.last_name} requested an invite link.')
     elif message.text == "❓Read the contest rules":
         markup = types.InlineKeyboardMarkup()
