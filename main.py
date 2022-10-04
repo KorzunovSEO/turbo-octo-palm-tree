@@ -85,7 +85,7 @@ def langs(message):
         bot.send_message(156664092, f'User with nickname {message.from_user.username}, name {message.from_user.first_name} {message.from_user.last_name} requested an invite link.')
     elif message.text == "❓Read the contest rules":
         markup = types.InlineKeyboardMarkup()
-        markup.add(types.InlineKeyboardButton("Learn the rules", url="https://t.me/c/1827261893/7"))
+        markup.add(types.InlineKeyboardButton("Learn the rules", url="https://t.me/c/1679662336/5"))
         bot.send_message(message.chat.id, "Detailed rules of our contest", reply_markup=markup)
     else:
         bot.send_message(message.chat.id, 'The message was entered incorrectly!', parse_mode='html')
